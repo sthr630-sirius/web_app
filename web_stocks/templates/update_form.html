@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <title>更新フォーム</title>
+</head>
+<body>
+<p>登録フォーム</p>
+<form action="/{{form_action}}" method="POST">
+    <input type="hidden" name="table_name" value={{ table_name }} readonly>
+    <table class="design">
+        <tr>
+            <th>番号</th>
+            <th>品目</th>
+            <th>追加量/使用量</th>
+            <th>単位</th>
+        </tr>
+        <tr>
+            <td><input type="number" name="id" value={{ id }} readonly></td>
+            <td><input type="text" name="item" value={{ item }} readonly></td>
+            <td><input type="number" name="delta"></td>
+            <td><input type="text" name="unit" value={{ unit }} readonly></td>
+            <td><input type="submit" value={{submit_value}}></td>
+        </tr>
+</form>
+</body>
+</html>

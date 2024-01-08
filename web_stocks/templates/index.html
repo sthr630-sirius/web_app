@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="static/css/style.css">
+    <title>在庫管理</title>
+</head>
+<body>
+    <p class="my_title">○キッチン在庫</p>
+    <button onclick="location.href='/insert_form/kitchen_stocks'" class="btn btn-border">追加</button>
+    <table class="design">
+        <tr>
+            <th>番号</th>
+            <th>品目</th>
+            <th>数量</th>
+            <th>単位</th>
+        </tr>
+        {% for stock in kitchen_stocks %}
+        <tr>
+            <td>{{stock.id}}</td>
+            <td>{{stock.item}}</td>
+            <td>{{stock.quantity}}</td>
+            <td>{{stock.unit}}</td>
+            <td style="border-bottom:none;"><button onclick="location.href='/update_form/{{ stock.id }}&kitchen_stocks'" class="btn btn-border">更新</button></td>
+            <td style="border-bottom:none;"><button onclick="location.href='/delete_form/{{ stock.id }}&kitchen_stocks'" class="btn btn-border">削除</button></td>
+        </tr>
+        {% endfor %}
+    </table>
+    <p class="my_title">○バスルーム在庫</p>
+    <button onclick="location.href='/insert_form/bathroom_stocks'" class="btn btn-border">追加</button>
+    <table class="design">
+        <tr>
+            <th>番号</th>
+            <th>品目</th>
+            <th>数量</th>
+            <th>単位</th>
+        </tr>
+        {% for stock in bathroom_stocks %}
+        <tr>
+            <td>{{stock.id}}</td>
+            <td>{{stock.item}}</td>
+            <td>{{stock.quantity}}</td>
+            <td>{{stock.unit}}</td>
+            <td><button onclick="location.href='/update_form/{{ stock.id }}&bathroom_stocks'" class="btn btn-border">更新</button></td>
+            <td><button href="/delete_form/{{ stock.id }}&bathroom_stocks" class="btn btn-border">削除</button></td>
+        </tr>
+        {% endfor %}
+    </table>
+    <p class="my_title">○サトヒロ在庫</p>
+    <a href="/insert_form/satohiro_stocks" class="btn btn-primary">追加</a>
+    <table border="1">
+        <tr>
+            <th>番号</th>
+            <th>品目</th>
+            <th>数量</th>
+            <th>単位</th>
+        </tr>
+        {% for stock in satohiro_stocks %}
+        <tr>
+            <th>{{stock.id}}</th>
+            <th>{{stock.item}}</th>
+            <th>{{stock.quantity}}</th>
+            <th>{{stock.unit}}</th>
+            <td><a href="/update_form/{{ stock.id }}&satohiro_stocks" class="btn btn-success">更新</a></td>
+            <td><a href="/delete_form/{{ stock.id }}&satohiro_stocks" class="btn btn-success">削除</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

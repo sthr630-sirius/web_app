@@ -1,0 +1,52 @@
+@charset "utf-8";
+.my_title{
+    font-size:30px;
+    position: relative;
+    color:#778ca3;
+    line-height:1.4;
+    -webkit-box-reflect:below -10px -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0) 10%, rgba(0,0,0,0.6));
+}
+.design{
+    width:50%;
+    text-align:center;
+    border-collapse:collapse;
+    border-spacing:0;
+}
+.design th{
+    padding:10px;
+    border-bottom:solid 4px #778ca3;
+    color:#778ca3;
+}
+.design td{
+    padding: 10px;
+    border-bottom:solid 1px #778ca3;
+}
+
+.btn-radius-solid {
+  border: 1px solid #ccc;
+  background: #f1e767;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fdfbfb), to(#ebedee));
+  background: -webkit-linear-gradient(top, #fdfbfb 0%, #ebedee 100%);
+  background: linear-gradient(to bottom, #fdfbfb 0%, #ebedee 100%);
+  -webkit-box-shadow: inset 1px 1px 1px #fff;
+  box-shadow: inset 1px 1px 1px #fff;
+}
+
+.btn-radius-solid:hover {
+  background: -webkit-gradient(linear, left bottom, left top, from(#fdfbfb), to(#ebedee));
+  background: -webkit-linear-gradient(bottom, #fdfbfb 0%, #ebedee 100%);
+  background: linear-gradient(to top, #fdfbfb 0%, #ebedee 100%);
+}
+
+.btn-border {
+  width: 80px;
+  height: 45px;
+  border: 2px solid #778ca3;
+  border-radius: 0;
+  background: #fff;
+}
+
+.btn-border:hover {
+  color: #fff;
+  background: #778ca3;
+}

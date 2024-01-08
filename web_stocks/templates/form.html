@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登録フォーム</title>
+</head>
+<body>
+<p>登録フォーム</p>
+<form action="/{{form_action}}" method="POST">
+    <input type="hidden" name="table_name" value={{ table_name }} readonly>
+    <table class="design">
+        <tr>
+            <th>品目</th>
+            <th>数量</th>
+            <th>単位</th>
+        </tr>
+        <tr>
+            <td><input type="text" name="item"></td>
+            <td><input type="number" name="quantity"></td>
+            <td><input type="text" name="unit"></td>
+            <td><input type="submit" value={{submit_value}} class="btn btn-border"></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
