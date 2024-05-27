@@ -1,6 +1,6 @@
 import sqlite3
 
-DATABASE = "database.db"
+DATABASE = "./love_mission/database.db"
 
 def create_questions_table():
     con = sqlite3.connect(DATABASE)

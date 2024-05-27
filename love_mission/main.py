@@ -3,7 +3,7 @@ from flask import render_template
 import sqlite3
 import random
 
-DATABASE = "database.db"
+DATABASE = "./love_mission/database.db"
 
 @app.route("/")
 def index():

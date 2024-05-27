@@ -1,6 +1,6 @@
 import sqlite3
 
-DATABASE = "../../database.db"
+DATABASE = "../database.db"
 con = sqlite3.connect(DATABASE)
 con.execute("create table if not exists questions (no, content)")
 
