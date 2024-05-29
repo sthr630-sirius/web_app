@@ -3,19 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>print_question</title>
+    <link rel='stylesheet' href="./static/style.css"/>
 </head>
 <body>
-  <h1>質問</h1>
-  <p>{{ question }} </p>
-  <!--
-  {% for question in questions %}
+    <a href="/" class="home_button">
+            <img width="100" src="./static/img/home.png" alt="home">
+    </a>
+    <h1>質問:{{ question }}</h1>
+    <!--
+    {% for question in questions %}
     <p>No:   {{ question.no }}</p>
     <p>質問：{{ question.content }}</p>
-  {% endfor %}
-  -->
+    {% endfor %}
+    -->
 
-  <a href="/">ホーム</a>
-  <a href="/get_question">質問選択に戻る</a>
+    <button class="button" onclick="location.href='./print_question'">次の質問</button>
 
+    <!--
+    <div>
+    <a href="/" class="home_button">
+    <img width="150" src="./static/img/home.png" alt="home">
+    </a>
+    </div>
+    -->
 </body>
 </html>

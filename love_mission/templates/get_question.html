@@ -3,10 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>get_question</title>
+    <link rel='stylesheet' href="{{url_for('static', filename='style.css')}}"/>
 </head>
 <body>
-  <h1>ボタンを押してください</h1>
-    <a href="/print_question">質問を表示</a>
-    <a href="/">ホーム</a>
+    <a href="/" class="home_button">
+            <img width="100" src="./static/img/home.png" alt="home">
+    </a>
+
+    <h1>ボタンを押してください</h1>
+
+    <button class="button" onclick="location.href='./print_question'">質問を表示</button>
+
 </body>
 </html>

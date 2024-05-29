@@ -22,7 +22,7 @@ def PrintQuestion():
     out_question = []
 
     n = len(db_questions)
-    out_question_no = random.randint(0, n)
+    out_question_no = random.randint(0, n-1)
     out_question = db_questions[out_question_no][1]
     #for row in db_questions:
     #    questions.append({"no": row[0], "content": row[1]})
