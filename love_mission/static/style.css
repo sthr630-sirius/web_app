@@ -1,13 +1,22 @@
 h1{
+    text-align:center;
     color: red;
 }
 
 h2{
+    text-align:center;
     color: pink;
 }
 
 .button{
+    text-align:center;
     font-size: 150%;
     width: 150px;
     height: 80px;
+}
+
+.block{
+    display:block;
+    width:150px;
+    margin:0 auto;
 }
