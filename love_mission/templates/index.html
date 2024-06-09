@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <title>index_page</title>
     <link rel='stylesheet' href="{{url_for('static', filename='style.css')}}"/>
+    <script src="https://kit.fontawesome.com/fac6df6d72.js" crossorigin="anonymous"></script>
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 </head>
 <body>
     <h2>ゆりゆり&たけちゃんマン</h2>
     <h1>お見合い大作戦（仮）</h1>
-    <button class="block button" onclick="location.href='./get_question'">START</button>
+    <div class="button__wrapper">
+        <a class="btn btn--color btn--radius" onclick="location.href='./get_question'">START <i class="fa-solid fa-chevron-right"></i></a>
+    </div>
 </body>
 </html>

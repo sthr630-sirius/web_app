@@ -4,27 +4,17 @@
     <meta charset="UTF-8">
     <title>print_question</title>
     <link rel='stylesheet' href="./static/style.css"/>
+    <script src="https://kit.fontawesome.com/fac6df6d72.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <a href="/" class="home_button">
-            <img width="100" src="./static/img/home.png" alt="home">
+        <i class="fa-solid fa-house fa-3x"></i>
     </a>
+
     <h1>質問:{{ question }}</h1>
-    <!--
-    {% for question in questions %}
-    <p>No:   {{ question.no }}</p>
-    <p>質問：{{ question.content }}</p>
-    {% endfor %}
-    -->
 
-    <button class="block button" onclick="location.href='./print_question'">次の質問</button>
-
-    <!--
-    <div>
-    <a href="/" class="home_button">
-    <img width="150" src="./static/img/home.png" alt="home">
-    </a>
+    <div class="button__wrapper">
+        <a class="btn btn--color btn--radius" onclick="location.href='./print_question'">次の質問 <i class="fa-solid fa-chevron-right"></i></a>
     </div>
-    -->
 </body>
 </html>
