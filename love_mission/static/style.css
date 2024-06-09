@@ -2,33 +2,30 @@ body{
     background-color: #F9EFF1;
 }
 
-
 h1{
     text-align:center;
     color: #cc0066;
+    font-size: 300%;
 }
 
 h2{
     text-align:center;
-    color: #E75685;
+    color: #cc0066;
+    font-size: 1.2erm;
 }
 
-.button{
+h3{
     text-align:center;
-    font-size: 150%;
-    width: 150px;
-    height: 80px;
+    color: #cc0066;
+    font-size: 300%;
 }
-
-.block{
-    display:block;
-    width:150px;
-    margin:0 auto;
-}
-
 
 .button__wrapper{
     text-align: center;
+}
+
+.button__wrapper_r{
+    text-align: right;
 }
 
 .btn,
