@@ -61,3 +61,17 @@ a.btn--color {
 a.btn--radius {
    border-radius: 100vh;
 }
+
+.centering_parent {
+    padding: 20px;              /* 余白指定 */   /* 背景色指定 */
+    height: 100px;              /* 高さ指定 */
+    text-align:  center;        /* 中央寄せ */
+}
+
+.centering_item {
+    margin:  5px;               /* 外側の余白 */
+}
+
+div:active {
+  color : black;
+}
